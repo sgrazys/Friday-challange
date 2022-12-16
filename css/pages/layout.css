@@ -5,9 +5,7 @@ background-color: #F7F6FF;
 .nav-wrapper > .logo {
 
 }
-.nav-wrapper > .logo > img {
-    width: 25px;
-}
+
 .nav-wrapper > .home {
 
 }
@@ -25,8 +23,7 @@ background-color: #F7F6FF;
 }
 
 .footer-wrapper {
-    height: 20px;
-    background-color: aqua;
+text-align: center;
 }
 
 

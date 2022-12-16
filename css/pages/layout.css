@@ -1,22 +1,20 @@
 .nav-container {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); ;
     width: 100px;
     height: 906px;
     background-color: var(--secondary-color);
+    transition: all 0.8s;
 }
 
-.link-name {
-    display: none;
-    text-decoration: none;
-    color: var(--nav-font-color);
-    font-size: 16px;
-    position: absolute;
-    left: 81px;
+.nav-container:hover {
+    width: 206px;
 }
 
-.house-wrapper > .house-link {
-    color: var(--font-color);
+.nav-container:hover * {
+    opacity: 100%;
+    transition: all 0.5s;
 }
 
 .logo {
@@ -35,56 +33,43 @@
 
 .house-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: #fff;
-    width: 89%;
     height: 58px;
     margin-top: 42px;
-    margin-left: 11%;
+    margin-left: 11px;
     border-radius: 25px 0px 0px 25px;
 }
 
 .house-icon {
-    width: 25px;
-    height: 25px;
+    margin-left: 32px;
 }
 
-.calendar-wrapper {
+.house-link {
+    color: var(--font-color);
+}
+
+.link-name {
+    text-decoration: none;
+    color: var(--nav-font-color);
+    font-size: 16px;
+    padding-left: 19px;
+    opacity: 0%;
+}
+
+.icon {
+    margin-left: 37px;
+}
+
+.wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 34px;
-}
-
-.calendar-icon {
-    width: 25px;
-    height: 25px;
-}
-
-.cube-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 34px;
-}
-
-.cube-icon {
-    width: 25px;
-    height: 25px;
-}
-
-.controler-wrapper {
-    display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     margin-top: 34px;
 }
 
 .controler-icon {
-    width: 40px;
-    height: 25px;
+    margin-left: 30px;
 }

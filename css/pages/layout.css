@@ -1,128 +1,100 @@
 .nav-container {
+    display: flex;
+    flex-direction: column;
     width: 100px;
     height: 906px;
-    background-color: #F7F6FF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
+    background-color: var(--secondary-color);
 }
 
-.nav-container > .logo-wrapper > .logo {
+.link-name {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.logo {
     width: 68px;
-    position: absolute;
-    top: 52px;
-    left: 16px;
+    height: 34px;
+    margin-top: 52px;
+    margin-left: calc(50% - 34px);
 }
 
-.nav-container > .divider {
-    position: absolute;
-    width: 62px;
+.divider {
     border-bottom: 2px solid #C4C4C4;
-    top: 110px;
-    left: calc(50% - 31px);
+    width: 60%;
+    margin-top: 24px;
+    margin-left: 20%;
 }
 
 .house-wrapper {
-    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 89%;
+    height: 58px;
+    margin-top: 42px;
+    margin-left: 11%;
     border-radius: 25px 0px 0px 25px;
-    top: 142px;
-    position: absolute;
-    left: 20px;
-    height: 50px;
-    width: 80px;
 }
 
-.house-wrapper > .house-icon {
-    position: absolute;
-    width: 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.house-wrapper > .house-description {
-    display: none;
-    position: absolute;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19.5px;
-    color: var(--font-color);
-    top: 50%;
-    left: 75%;
-    transform: translate(0%, -50%);
-} 
-
-.calendar-icon {
-    position: absolute;
+.house-icon {
     width: 25px;
     height: 25px;
-    top: 233px;
-    left: 37px;
 }
 
-.calendar-description {
-    display: none;
+.house-wrapper > .link-name {
     position: absolute;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19.5px;
-    color: var(--nav-font-color);
     left: 81px;
-    top: 236px;
+}
+
+.calendar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    border: solid 2px red;
+    margin-top: 34px;
+}
+
+.calendar-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.calendar-wrapper > .link-name {
+    position: absolute;
+    left: 81px;
+    color: var(--nav-font-color);
+}
+
+.cube-wrapper {
+    border: 2px solid green;
+    margin-top: 34px;
 }
 
 .cube-icon {
-    position: absolute;
     width: 25px;
     height: 25px;
-    top: 292px;
-    left: 37px;
+    margin-left: calc(50% - 12.5px);
 }
 
-.cube-description {
-    display: none;
-    position: absolute;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19.5px;
-    text-transform: uppercase;
+.cube-wrapper > .link-name {
     color: var(--nav-font-color);
-    left: 81px;
-    top: 295px;
+}
+
+.control-wrapper {
+    margin-top: 34px;
+    border: 2px solid yellow;
 }
 
 .control-icon {
-    position: absolute;
     width: 40px;
     height: 25px;
-    top: 351px;
-    left: 30px;
+    margin-left: calc(50% - 20px);
 }
 
-.control-description {
-    display: none;
-    position: absolute;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19.5px;
-    text-transform: uppercase;
+.control-wrapper > .link-name {
     color: var(--nav-font-color);
-    left: 89px;
-    top: 354px;
-}
-
-.footer-wrapper {
-    position: absolute;
-    top: 871px;
-    width: 346px;
-    left: 547px;
-    border-top: 1px solid var(--font-color);
-}
-
-.footer-description {
-    font-size: 11px;
-    line-height: 13px;
-    color: var(--font-color);
-    padding-top: 11px;
-    width: 100%;
-    text-align: center;
 }

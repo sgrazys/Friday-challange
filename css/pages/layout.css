@@ -109,3 +109,20 @@
     left: 89px;
     top: 354px;
 }
+
+.footer-wrapper {
+    position: absolute;
+    top: 871px;
+    width: 346px;
+    left: 547px;
+    border-top: 1px solid var(--font-color);
+}
+
+.footer-description {
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--font-color);
+    padding-top: 11px;
+    width: 100%;
+    text-align: center;
+}
